@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tv.mimi.html</title>
+  <style>
+
+  </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PROYECTOR EDU - Solo Celular</title>
+<style>
+*{margin:0;box-sizing:border-box}
+body{background:#000;color:#fff;font-family:Arial,sans-serif;height:100vh;display:flex;flex-direction:column}
+#videoBox{flex:1;background:#111;display:flex;justify-content:center;align-items:center;position:relative;overflow:hidden}
+video{width:100%;height:100%;object-fit:contain}
+#overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent, rgba(0,0,0,0.9));padding:20px}
+#notas{font-size:5vw;font-weight:900;color:#FFCC02;text-align:center;text-shadow:2px 2px #000}
+#controles{background:#1a1a1a;padding:10px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center;border-top:3px solid #FFCC02}
+.btn{padding:12px 16px;border:none;border-radius:12px;font-weight:900;font-size:14px}
+.btn-y{background:#FFCC02;color:#000}.btn-w{background:#fff;color:#000}.btn-r{background:#FF1744;color:#fff}
+#laser{position:absolute;width:40px;height:40px;background:red;border-radius:50%;box-shadow:0 0 20px red;pointer-events:none;display:none;z-index:99}
+</style>
+</head>
+<body>
+<div id="videoBox" onclick="togglePlay()">
+<video id="vid" playsinline></video>
+<div id="laser"></div>
+<div id="overlay"><div id="notas">PROYECTOR EDU • TOCA ABAJO PARA CARGAR VIDEO</div></div>
+</div>
+
+<div id="controles">
+<input type="file" id="file" accept="video/*" style="display:none">
+<button class="btn btn-y" onclick="file.click()">📁 CARGAR VIDEO</button>
+<button class="btn btn-w" onclick="togglePlay()">⏯️ PLAY/PAUSA</button>
+<button class="btn btn-w" onclick="document.getElementById('videoBox').requestFullscreen()">⛶ PANTALLA COMPLETA</button>
+<button class="btn btn-w" onclick="cambiarNota()">📝 CAMBIAR EXPLICACIÓN</button>
+<button class="btn btn-r" onclick="activarLaser()">🔴 PUNTERO LASER</button>
+</div>
+
+<script>
+const vid=document.getElementById('vid');
+const notas=document.getElementById('notas');
+const laser=document.getElementById('laser');
+let laserOn=false;
+
+file.onchange=e=>{
+ let url=URL.createObjectURL(e.target.files[0]);
+ vid.src=url; vid.play();
+ notas.innerText="Video cargado • Toca para pausar y explicar";
+}
+
+function togglePlay(){
+ if(vid.paused) vid.play(); else vid.pause();
+}
+
+function cambiarNota(){
+ let t=prompt("¿Qué vas a explicar en esta parte?",notas.innerText);
+ if(t) notas.innerText=t.toUpperCase();
+}
+
+function activarLaser(){
+ laserOn=!laserOn;
+ laser.style.display=laserOn?'block':'none';
+ if(laserOn) notas.innerText="MODO LASER ACTIVO • Toca el video para apuntar";
+}
+
+videoBox.addEventListener('mousemove',e=>{
+ if(!laserOn) return;
+ laser.style.left=(e.clientX-20)+'px';
+ laser.style.top=(e.clientY-20)+'px';
+});
+videoBox.addEventListener('touchmove',e=>{
+ if(!laserOn) return;
+ laser.style.left=(e.touches[0].clientX-20)+'px';
+ laser.style.top=(e.touches[0].clientY-20)+'px';
+});
+
+// Mantener pantalla encendida
+if('wakeLock' in navigator) navigator.wakeLock.request('screen');
+</script>
+</body>
+</html>
+  <script>
+
+  </script>
+</body>
+</html>
