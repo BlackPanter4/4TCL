@@ -1,81 +1,66 @@
-# 4TCL - PROYECTOR
+# 4TCL - PROYECTOR 4TCL
+### En honor a Guillermo González Camarena, su alumno Isaías Hernández presenta
 
-> **En honor a Guillermo González Camarena, su alumno Isaías Hernández presenta Proyector 4TCL**
+> **ID OFICIAL: 4TCL**
+> **DISCIPLINA • TRABAJO • RESULTADOS**
+> **LA SEGURIDAD TAMBIÉN ES FUERZA**
 
-![ID](https://img.shields.io/badge/ID-4TCL-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Piloto%2050%20kits-blue?style=for-the-badge)
+![ID](https://img.shields.io/badge/ID-4TCL-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Lote%20Piloto%2050-blue?style=for-the-badge)
 ![Material](https://img.shields.io/badge/Material-Exel%20Foam%205mm-orange)
+![By](https://img.shields.io/badge/By-Isa%C3%ADas%20Hern%C3%A1ndez%20-DECISCORP-black)
 
-**DISCIPLINA • TRABAJO • RESULTADOS**
-**LA SEGURIDAD TAMBIÉN ES FUERZA**
+**Proyector de smartphone armable en 10 segundos.** De la cabina del TN 11 al salón de clases.
 
-Proyector de smartphone de bajo costo, armable en 10 segundos. Diseñado para educación, demostración en campo y venta en punto de venta.
+### 🎯 ¿Qué es 4TCL?
 
-### 1. Homenaje
-Este proyecto nace como tributo al Ing. Guillermo González Camarena, inventor de la TV a color. Su visión nos inspira a llevar la proyección a todos con tecnología accesible.
+No es una caja. Es un proyector funcional hecho en Exel Foam 60x35x25cm que proyecta 100 pulgadas con el lente de 8cm y un celular. Diseño para Fly Machine, sin pegamento.
 
-Presentado por: **Isaías Hernández | DECISCORP / QUANTUM COMPANY**
+**Inspiración:** Guillermo González Camarena nos enseñó que México inventa. Nosotros llevamos su legado a las aulas.
 
-### 2. Especificaciones Técnicas (ID: 4TCL)
+### 📐 Specs Técnicas ID: 4TCL
 
-- **Modelo:** PROY-4TCL-603525
-- **Medidas Armado:** 60cm largo x 35cm ancho x 25cm alto
-- **Medidas Plano:** 90x60cm (1 lámina por proyector)
-- **Despiece:** 6 caras con pestañas de 2.5x2cm
-- **Óptica:** 1 lente de 8cm Ø, distancia focal 25cm
-- **Proyección:** 100 pulgadas a 2.5m de distancia
-- **Material:** Exel Foam 5mm - Interior Negro Mate / Exterior Blanco Mate
+- **SKU:** PROY-4TCL-603525
+- **Medidas armado:** 60 L x 35 A x 25 H cm
+- **Plano:** 1 lámina 90x60cm = 1 proyector (6 caras)
+- **Pestañas:** 2.5cm
+- **Lente:** Ø 8cm, focal 25cm
+- **Interior:** Negro mate absoluto (sin rebote)
+- **Exterior:** Blanco mate
 
-### 3. Fabricación en Fly Machine
+### 🛠️ Fabricación Fly Machine
 
-Para corte rápido y sin error:
+Este es el truco para que la Fly no lo corte todo:
 
-- **Corte perimetral:** Negro - Corte total
-- **Ranuras de doblez:** Rojo - Medio corte / Kiss Cut
-- **Ranura:** Fresa en V 90° de 6mm o cuchilla a 80gf
-- **Profundidad ranura:** 2.5mm (50% del material)
-- **Círculo lente:** Solo 1 orificio de Ø8cm centrado en cara frontal 35x25
+- **Línea NEGRA:** Corte total perimetral
+- **Línea ROJA:** Medio corte / Kiss Cut / Pleca - Ranura V 90° a 2.5mm profundidad
+- **Fresa:** V-Bit 90° de 6mm o cuchilla a 80gf x 2 pasadas
+- **Acabado:** Vinil mate o pintura acrílica mate
 
-> Tiempo de máquina: 45 seg / kit. Armado: 10 seg sin pegamento.
+> Tiempo: 45 seg corte + 10 seg armado.
 
-### 4. Acabado
+### 💰 BOM
 
-- **Interior:** Vinil o pintura acrílica Negro Mate Absoluto (evita rebote de luz)
-- **Exterior:** Blanco Mate - Lijado 220 + Primer
-- **Sellado:** Cinta ducto negra mate
+Exel Foam $75 + Lente $35 + Consumibles $10 = **$120 costo**
+Venta: $280 mayoreo / $450 retail
 
-### 5. Bill of Materials (BOM) por unidad
+### 🚀 Armado 10 seg
 
-| Material | Costo MX |
-| :--- | :--- |
-| Exel Foam 90x60 | $75 |
-| Lente 8cm | $35 |
-| Consumibles | $10 |
-| **Total** | **$120** |
+1. Desdobla
+2. Levanta laterales y engancha
+3. Frente con orificio + tapa trasera
+4. Celular al 100% brillo
+5. Proyecta en cuarto oscuro
 
-Precio Venta: $280 mayoreo / $450 menudeo
+### 📸 Galería
 
-### 6. Instrucciones de Armado (10 seg)
+`docs/proyeccion_4tcl.jpg` - Proyección en salón
+`docs/poster_perro.jpg` - Poster oficial
 
-1. Desdobla las 6 piezas.
-2. Levanta laterales 60x25 y engancha pestañas a la base 60x35.
-3. Inserta frente 35x25 con orificio y tapa trasera.
-4. Coloca celular con brillo al 100% en la base interior.
-5. Tapa superior y proyecta a pared en cuarto oscuro.
+### 🔗 Ecosistema
 
-### 7. Roadmap
+Este repo es parte de Quantum Company - De Luchanas para el mundo.
+Como Paramedico Offline, Emergencias Luchanas y Q777.
 
-- [x] Prototipo en Exel Foam
-- [x] Validación Fly Machine
-- [ ] Lote Piloto 50 kits
-- [ ] Prueba en escuelas Juárez
-- [ ] Vinil con marca DECISCORP
-
-### 8. Contacto
-
-**Autor:** Isaías Hernández
-**Lema:** Disciplina, Trabajo, Resultados.
-**Repo:** 4TCL / proyector
-
----
-*Urban Trucker - Proyector 4TCL - Hecho en la cabina del TN 11*
+**Autor:** Isaías Hernández Ortiz - BlackPanter4
+**Lema:** El cambio nació en mí.
